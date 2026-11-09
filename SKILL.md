@@ -1,11 +1,11 @@
 ---
 name: maniva
-description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci open commons of evidence, protocols, data and analysis for agricultural research, and follows that layer's rules.
+description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, the team's trial data, protocols or analyses, or daily weather, elevation or soil data for farms, trial sites or other points. Routes the question to the right layer of maniva, the AgrDataSci open commons of evidence, protocols, data and analysis for agricultural research, and follows that layer's rules.
 ---
 
 # maniva. An open commons of evidence, protocols, data and analysis for agricultural research
 
-<!-- version:start -->Router updated 2026-11-07. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
+<!-- version:start -->Router updated 2026-11-09. Layers: evidence, protocols, data (tricot-data, environment-data), analysis. There is no separate data-integration layer.<!-- version:end -->
 
 This skill is an entry point, not a source of answers. It holds no evidence, protocols or data of its own. Each layer lives in its own repository with its own files, rules, version and citation. Your job here is to send each question to the right layer, load only what the question needs, and then follow that layer's rules.
 
@@ -20,6 +20,7 @@ Write maniva and tricot in lowercase, always. That holds in headings, table cell
 | What the evidence says, from published papers, guides and reports | tricot-knowledge-base | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md) | Skill available |
 | How to run a trial, which survey questions and traits to use | tricot-protocols | [README.md](https://raw.githubusercontent.com/AgrDataSci/tricot-protocols/main/README.md) | Skill planned |
 | Which trials and datasets exist, and where to get the data | tricot-data | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/SKILL.md), then [datasets.csv](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/datasets.csv) | Skill available |
+| Daily weather (rainfall, temperature, radiation, humidity), elevation or soil properties for farms, trial sites, households or any other points | Data, environment-data | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/environment-data/main/SKILL.md) | Skill available |
 | How the team analyses the data, which method to use and why, and how trial data link with climate, soil and other environmental data | Analysis, tricot-analysis-workflows | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/SKILL.md), or [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md) if there is no SKILL.md yet | Skill available |
 | Which R function runs a method, how to read ClimMob data, compute climate indices or produce a ClimMob report | Analysis, R packages (gosset, ClimMobTools, climatrends, chirps, ClimMob-analysis) | The package reference manual on CRAN, `https://CRAN.R-project.org/package=<name>`, or the [ClimMob-analysis README](https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/README.md) | No skill, use the manuals and the workflows |
 | How to set up a reproducible, FAIR analysis project | Analysis, template-repo-data-analysis | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/template-repo-data-analysis/main/SKILL.md) | Skill available |
