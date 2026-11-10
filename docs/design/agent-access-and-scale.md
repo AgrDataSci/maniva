@@ -32,6 +32,7 @@ Sizes are for the current files on the default branch, measured on 7 November 20
 | maniva | Entry point | 1.6 MB | |
 | ClimMobTools | Analysis | 1.1 MB | |
 | template-repo-data-analysis | Analysis | 0.8 MB | |
+| environment-data | Data | 0.07 MB | Skills and fetch scripts only |
 | **Public total** | | **606 MB** | |
 
 Three repositories hold 95% of the suite, and in each case the weight sits in files that assistants cannot use well. PDFs and Word files are invisible to most browsing tools, and the JSON trial files are too large for them.
