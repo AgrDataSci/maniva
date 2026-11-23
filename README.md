@@ -38,7 +38,7 @@ The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which r
 
 ## The repositories
 
-tricot (triadic comparison of technology options) is the first domain. Since 2011 it has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages and a body of peer-reviewed evidence. Climate data come next. CHIRPS rainfall, CHIRTS temperature and RHOMIS household data are being integrated with the Climate Action team, for use with tricot trials or on their own. Further domains join as they meet the same standards.
+tricot (triadic comparison of technology options) is the first domain. Since 2011 it has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages and a body of peer-reviewed evidence. Environment data are available too. Daily rainfall (CHIRPS), temperature (CHIRTS, AgERA5), elevation and soil (SoilGrids) can be fetched for any point, for use with tricot trials or on their own. RHOMIS household data come next, with the Climate Action team. Further domains join as they meet the same standards.
 
 Each layer lives in its own repository, with its own versions, license and DOI. This repository links them.
 
@@ -47,6 +47,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 | [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base) | Literature | Verified cards for the open-access tricot literature, with an expert skill | Active, skill available |
 | [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | Methods | Standard operating procedures, surveys and trait metadata, in five languages | Available, skill planned |
 | [tricot-data](https://github.com/AgrDataSci/tricot-data) | Data | Harmonized trial data in JSON, archived on Zenodo | Available, skill planned |
+| [environment-data](https://github.com/AgrDataSci/environment-data) | Data | Daily weather, elevation and soil properties for any point, from CHIRPS, CHIRTS, AgERA5, Copernicus DEM and SoilGrids, as agent skills | Active, skill available |
 | [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, as curated use cases with decision records on methods and their limits, including how trial data link with climate, soil and other environmental data | Active, skill available |
 | [gosset](https://github.com/AgrDataSci/gosset), [ClimMobTools](https://github.com/AgrDataSci/ClimMobTools), [climatrends](https://github.com/AgrDataSci/climatrends), [chirps](https://github.com/AgrDataSci/chirps) and [ClimMob-analysis](https://github.com/AgrDataSci/ClimMob-analysis) | Analysis | The R packages the workflows run on, for ranking models, ClimMob data, climate indices and rainfall, plus the workflow behind ClimMob reports | Active, packages on CRAN, report workflow on GitHub |
 | [template-repo-data-analysis](https://github.com/AgrDataSci/template-repo-data-analysis) | Analysis | A template for FAIR and reproducible analysis projects, with decision records, tests and provenance linking outputs to data, protocols and evidence | Active, skill available |
@@ -67,8 +68,8 @@ knowledge base      protocols             data                      analysis
  on-farm     breeding    agronomy     environmental  socio-economic     │
  testing                             CHIRPS, CHIRTS,     RHOMIS         │
  tricot                                   soil                          │
-available      under       under          under           under         │
-            development development    development     development      │
+available      under       under        available         under         │
+            development development                    development      │
     │            │           │              │               │           │
     └────────────┴───────────┬──────────────┴───────────────┘           │
                              │                                          │
@@ -84,7 +85,7 @@ available      under       under          under           under         │
 
 Each layer holds one repository per domain, and repositories are named by their domain, so the tricot repositories keep their names as other domains join. A domain adds a repository to a layer only when it has that kind of content, and most domains will add data and workflows alone.
 
-The data layer grows by domain. On-farm testing with tricot is available today. Breeding, agronomy, environmental and socio-economic data are under development, and each will live in its own repository that also works on its own. The domains connect through shared keys, what was tested, where and when. A fourth key for the participant or household is proposed. The analysis workflows hold the use cases that join the domains.
+The data layer grows by domain. On-farm testing with tricot and environment data are available today. Breeding, agronomy and socio-economic data are under development, and each will live in its own repository that also works on its own. The domains connect through shared keys, what was tested, where and when. A fourth key for the participant or household is proposed. The analysis workflows hold the use cases that join the domains.
 
 The key called what depends on a common identity for germplasm. The design, and the points open for discussion with partners, are in [`docs/design/germplasm-integration.md`](docs/design/germplasm-integration.md). How the suite stays readable for AI assistants as the data grow, including a proposed agent layer of trial cards and CSV files, is in [`docs/design/agent-access-and-scale.md`](docs/design/agent-access-and-scale.md).
 
