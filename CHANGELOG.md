@@ -8,6 +8,8 @@ Changes made before this file existed are recorded in the [commit history](https
 
 ### Added
 
+- maniva-reports joins the analysis layer (23 Nov 2026). `SKILL.md` routes every request for a report (technical report, annual report for CGIAR or PRMS, key result story, donor or CGSpace report) to it and carries its rules, PDF and Word delivery, numbers only from files the analysis wrote, every CGIAR reporting field printed, suggested tags labelled as suggestions with SDG 17, and the AI colophon. `AGENTS.md`, `llms.txt`, the README table and diagram, the citation abstract and the website analysis layer, in every language, name it too.
+- Mathieu Rouard and Valentin Guignon (Bioversity International) join the authors in `CITATION.cff`, the README and the website citation.
 - Three rules in `AGENTS.md` and `SKILL.md` after a feedback report from a ChatGPT session on Ethiopian forage trials (7 Nov 2026). Fetch trial data only from raw links and stop to ask for an upload when that fails, label every claim by its origin and cite only papers with a card or a resolved DOI, and report a computed result only with its code, n and uncertainty. The session read the forage files through a GitHub connector, got empty content and filled the gap with unverified citations and estimates it had not computed.
 - A rule to answer questions on women and men, or other designed groups, with part A of the user-group use case in tricot-analysis-workflows, which tests the group within sites.
 

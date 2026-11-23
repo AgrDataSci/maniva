@@ -10,7 +10,8 @@ abstract: >-
   literature. The protocols layer holds standard operating procedures whose
   traits map to the Crop Ontology. The data layer holds harmonized trial data.
   The analysis layer holds curated workflows with decision records, the R
-  packages they run on and a template for reproducible projects. One entry
+  packages they run on, a template for reproducible projects and a report
+  standard for technical and annual reports. One entry
   point routes each question to the layer that answers it, so a user can move
   from a published finding to the trials, protocols and methods behind it in
   one conversation. Further domains, such as climate and household data, join
@@ -38,6 +39,14 @@ authors:
   - family-names: Chase
     given-names: Rachel
     orcid: https://orcid.org/0000-0002-5859-6455
+    affiliation: "Bioversity International"
+  - family-names: Rouard
+    given-names: Mathieu
+    orcid: https://orcid.org/0000-0003-0284-1885
+    affiliation: "Bioversity International"
+  - family-names: Guignon
+    given-names: Valentin
+    orcid: https://orcid.org/0000-0003-0903-6811
     affiliation: "Bioversity International"
   - family-names: van Etten
     given-names: Jacob
