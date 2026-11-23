@@ -1,11 +1,11 @@
 ---
 name: maniva
-description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, the team's trial data, protocols or analyses, or daily weather, elevation or soil data for farms, trial sites or other points. Routes the question to the right layer of maniva, the AgrDataSci open commons of evidence, protocols, data and analysis for agricultural research, and follows that layer's rules.
+description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, the team's trial data, protocols or analyses, daily weather, elevation or soil data for farms, trial sites or other points, or a report from trial data (technical report, annual report for CGIAR or PRMS, key result story, donor or CGSpace report). Routes the question to the right layer of maniva, the AgrDataSci open commons of evidence, protocols, data and analysis for agricultural research, and follows that layer's rules.
 ---
 
 # maniva. An open commons of evidence, protocols, data and analysis for agricultural research
 
-<!-- version:start -->Router updated 2026-11-09. Layers: evidence, protocols, data (tricot-data, environment-data), analysis. There is no separate data-integration layer.<!-- version:end -->
+<!-- version:start -->Router updated 2026-11-23. Layers: evidence, protocols, data (tricot-data, environment-data), analysis (with maniva-reports for reports). There is no separate data-integration layer.<!-- version:end -->
 
 This skill is an entry point, not a source of answers. It holds no evidence, protocols or data of its own. Each layer lives in its own repository with its own files, rules, version and citation. Your job here is to send each question to the right layer, load only what the question needs, and then follow that layer's rules.
 
@@ -23,6 +23,7 @@ Write maniva and tricot in lowercase, always. That holds in headings, table cell
 | Daily weather (rainfall, temperature, radiation, humidity), elevation or soil properties for farms, trial sites, households or any other points | Data, environment-data | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/environment-data/main/SKILL.md) | Skill available |
 | How the team analyses the data, which method to use and why, and how trial data link with climate, soil and other environmental data | Analysis, tricot-analysis-workflows | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/SKILL.md), or [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md) if there is no SKILL.md yet | Skill available |
 | Which R function runs a method, how to read ClimMob data, compute climate indices or produce a ClimMob report | Analysis, R packages (gosset, ClimMobTools, climatrends, chirps, ClimMob-analysis) | The package reference manual on CRAN, `https://CRAN.R-project.org/package=<name>`, or the [ClimMob-analysis README](https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/README.md) | No skill, use the manuals and the workflows |
+| A report from trial data, such as a technical report, an annual report for CGIAR (Type 1) or PRMS, a key result story, a donor report or a CGSpace knowledge product | Analysis, maniva-reports | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/maniva-reports/main/SKILL.md), then [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/maniva-reports/main/AGENTS.md) | Skill available |
 | How to set up a reproducible, FAIR analysis project | Analysis, template-repo-data-analysis | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/template-repo-data-analysis/main/SKILL.md) | Skill available |
 
 ## How to work
@@ -37,6 +38,7 @@ Write maniva and tricot in lowercase, always. That holds in headings, table cell
 8. Label every claim by its origin. Published evidence comes from a card in tricot-knowledge-base, a protocol from tricot-protocols, a computed result from a named dataset, and anything else is outside maniva. Cite a paper only when it has a card or you resolved its DOI in this conversation.
 9. Report a computed result only when you ran the code in this conversation. Show the code, the n behind each estimate and its uncertainty. If you cannot run R, give the script and say plainly that no result was computed. Never present estimates you did not compute.
 10. For differences between women and men, or any group designed into the study, follow part A of the use case `do-user-groups-prefer-different-varieties` in tricot-analysis-workflows. A group unevenly spread across sites must be tested within sites.
+11. Send every request for a report through maniva-reports, whatever the report is called. Follow its `SKILL.md` and its rules. Deliver every report as a PDF and a Word file, take every number from a file the analysis wrote, print every CGIAR reporting field filled or empty, label Impact Areas, SDGs (always with SDG 17) and the readiness level as suggestions, never count trial participants as people trained, and keep the colophon that says the report was generated with AI through maniva. Use logos and colours only from that repository.
 
 ## Maps
 

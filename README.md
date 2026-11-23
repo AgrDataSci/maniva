@@ -14,7 +14,7 @@
 
 Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/maniva/).
 
-> Kauê de Sousa, Marie-Angélique Laporte, Brayden Youngberg, Almendra Cremaschi, Rachel Chase, Jacob van Etten
+> Kauê de Sousa, Marie-Angélique Laporte, Brayden Youngberg, Almendra Cremaschi, Rachel Chase, Mathieu Rouard, Valentin Guignon, Jacob van Etten
 
 Agricultural research produces papers, protocols, data and code, but they sit in separate places with nothing linking them. Using them well takes an insider, someone who knows which paper backs a method, which protocol produced a dataset and which script analyses it. Breeders in national programmes, students, modellers, other research teams and funders have to ask that insider. AI assistants fill the gap with generic or invented answers. maniva links these assets and documents them so that anyone, and any AI assistant, can use them without the insider.
 
@@ -50,6 +50,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 | [environment-data](https://github.com/AgrDataSci/environment-data) | Data | Daily weather, elevation and soil properties for any point, from CHIRPS, CHIRTS, AgERA5, Copernicus DEM and SoilGrids, as agent skills | Active, skill available |
 | [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, as curated use cases with decision records on methods and their limits, including how trial data link with climate, soil and other environmental data | Active, skill available |
 | [gosset](https://github.com/AgrDataSci/gosset), [ClimMobTools](https://github.com/AgrDataSci/ClimMobTools), [climatrends](https://github.com/AgrDataSci/climatrends), [chirps](https://github.com/AgrDataSci/chirps) and [ClimMob-analysis](https://github.com/AgrDataSci/ClimMob-analysis) | Analysis | The R packages the workflows run on, for ranking models, ClimMob data, climate indices and rainfall, plus the workflow behind ClimMob reports | Active, packages on CRAN, report workflow on GitHub |
+| [maniva-reports](https://github.com/AgrDataSci/maniva-reports) | Analysis | The report standard, page layout and R workflow that turn trial data into technical reports, annual reports for CGIAR and PRMS and key result stories, delivered as PDF and Word, machine-readable for CGIAR reporting tools | Under construction, skill available |
 | [template-repo-data-analysis](https://github.com/AgrDataSci/template-repo-data-analysis) | Analysis | A template for FAIR and reproducible analysis projects, with decision records, tests and provenance linking outputs to data, protocols and evidence | Active, skill available |
 
 ## How it works
@@ -76,11 +77,11 @@ available      under       under        available         under         │
                         shared keys                                     │
                      what, where, when                                  │
                              │                                          │
-                             │              ┌───────────────┬───────────┴───┐
-                             │              │               │               │
-                             └────────► workflows      R packages       template
-                                      use cases and  gosset and the   reproducible
-                                    decision records  ClimMob suite   FAIR projects
+                             │              ┌───────────────┬───────────┴───┬───────────────┐
+                             │              │               │               │               │
+                             └────────► workflows      R packages       template         reports
+                                      use cases and  gosset and the   reproducible   technical and
+                                    decision records  ClimMob suite   FAIR projects  annual reports
 ```
 
 Each layer holds one repository per domain, and repositories are named by their domain, so the tricot repositories keep their names as other domains join. A domain adds a repository to a layer only when it has that kind of content, and most domains will add data and workflows alone.
@@ -91,7 +92,7 @@ The key called what depends on a common identity for germplasm. The design, and 
 
 The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow those links from a finding to the trials behind it.
 
-The analysis layer has three parts. The workflows say which method to use and why, the R packages run it, and the template packages a new analysis so others can rerun, trace and cite it. The template draws on the other layers too, since its provenance entries link each output to the data, protocol and evidence behind it.
+The analysis layer has four parts. The workflows say which method to use and why, the R packages run it, the template packages a new analysis so others can rerun, trace and cite it, and maniva-reports turns the results into technical and annual reports. Every request for a report goes through maniva-reports, which sets the sections, the layout, the CGIAR reporting fields and the statement that the report was generated with AI through maniva. The template draws on the other layers too, since its provenance entries link each output to the data, protocol and evidence behind it.
 
 ## Principles
 
@@ -121,7 +122,7 @@ Rooted in biodiversity. Growing through collaboration.
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://doi.org/10.5281/zenodo.24011051
+> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, Rouard M, Guignon V, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://doi.org/10.5281/zenodo.24011051
 
 This DOI always resolves to the latest version. To cite one version exactly, use its own DOI on Zenodo. Version 1.0.0 is https://doi.org/10.5281/zenodo.24011052.
 
