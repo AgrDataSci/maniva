@@ -5,7 +5,7 @@ description: Use when a question touches maniva, on-farm testing, tricot, ClimMo
 
 # maniva. An open commons of evidence, protocols, data and analysis for agricultural research
 
-<!-- version:start -->Router updated 2026-11-23. Layers: evidence, protocols, data (tricot-data, environment-data), analysis (with maniva-reports for reports). There is no separate data-integration layer.<!-- version:end -->
+<!-- version:start -->Router updated 2026-11-25. Layers: evidence, protocols, data (tricot-data, environment-data), analysis (with maniva-reports for reports). There is no separate data-integration layer.<!-- version:end -->
 
 This skill is an entry point, not a source of answers. It holds no evidence, protocols or data of its own. Each layer lives in its own repository with its own files, rules, version and citation. Your job here is to send each question to the right layer, load only what the question needs, and then follow that layer's rules.
 
@@ -34,6 +34,7 @@ Write maniva and tricot in lowercase, always. That holds in headings, table cell
 4. For a layer whose skill is not yet published, answer only from what its files state, and say so. Never fill the gap from general knowledge without labelling it as external.
 5. Never invent a paper, number, dataset, protocol or result. If no layer answers the question, say so.
 6. Do not propose an analytical method before reading the relevant decision record in tricot-analysis-workflows, and never show illustrative or hypothetical numbers as if they described the user's data.
+   When the user asks what the data show (which traits or varieties farmers prefer, which perform best), go to the data first. Do not open with a ranking from literature or assumptions and offer the analysis later. If the data cannot be reached or analysed in this conversation, say so and give the script instead of a ranking.
 7. Use the curated use cases of tricot-analysis-workflows. Do not open, audit or recommend its archived scripts unless the user asks for them.
 8. Label every claim by its origin. Published evidence comes from a card in tricot-knowledge-base, a protocol from tricot-protocols, a computed result from a named dataset, and anything else is outside maniva. Cite a paper only when it has a card or you resolved its DOI in this conversation.
 9. Report a computed result only when you ran the code in this conversation. Show the code, the n behind each estimate and its uncertainty. If you cannot run R, give the script and say plainly that no result was computed. Never present estimates you did not compute.
@@ -50,9 +51,16 @@ The links above point to the live files on GitHub, so you always read the latest
 
 If `raw.githubusercontent.com` is blocked, try the same path on `github.com` (`https://github.com/AgrDataSci/<repository>/blob/main/<file>`).
 
-Trial data files are large. Most are over 1 MB and some reach 15 MB, so check `size_mb` in `datasets.csv` before opening one. Fetch them only from `raw.githubusercontent.com`, or from `https://github.com/AgrDataSci/tricot-data/raw/main/<path>`, never through the GitHub contents API or a GitHub connector, which return empty content for files over 1 MB and make a JSON parser fail with "unexpected end of input". If neither raw link works, tell the user at once, name the file and its size, and ask them to upload it. Do not fill the gap with literature or estimates.
+Choose the data source by the question, before fetching anything.
 
-The one exception is a question that pools trials or filters on site variables (gender, region) that `datasets.csv` does not hold. For those, read the three Parquet tables on the tricot-data release, [plots.parquet](https://github.com/AgrDataSci/tricot-data/releases/download/dev/plots.parquet), [sites.parquet](https://github.com/AgrDataSci/tricot-data/releases/download/dev/sites.parquet) and [variables.parquet](https://github.com/AgrDataSci/tricot-data/releases/download/dev/variables.parquet), instead of looping over trial files. They hold every trial keyed by `trial_id`, with the columns of `plot_data`, `site_data` and `metadata.variables` unchanged, about 6.6 MB together. They sit on the `dev` pre-release until v2, which is rebuilt on every push to tricot-data and has no DOI of its own, so state the build date and cite the concept DOI 10.5281/zenodo.17112491. Follow the tricot-data `SKILL.md` for the code that reads them.
+- **Parquet first.** Any question that spans more than one trial goes to the three Parquet tables on the tricot-data release, [plots.parquet](https://github.com/AgrDataSci/tricot-data/releases/download/dev/plots.parquet), [sites.parquet](https://github.com/AgrDataSci/tricot-data/releases/download/dev/sites.parquet) and [variables.parquet](https://github.com/AgrDataSci/tricot-data/releases/download/dev/variables.parquet). That covers every question about a crop, a country or a region (for example "which traits do farmers prefer for sweetpotato in West Africa"), every comparison across seasons, and every filter on site variables (gender, region) that `datasets.csv` does not hold. The tables hold every trial keyed by `trial_id`, with the columns of `plot_data`, `site_data` and `metadata.variables` unchanged, about 7 MB together. Use `datasets.csv` to pick the `trial_id` values, then filter the tables. Follow the tricot-data `SKILL.md` for the code that reads them. They sit on the `dev` pre-release until v2, which is rebuilt on every push to tricot-data and has no DOI of its own, so state the build date and cite the concept DOI 10.5281/zenodo.17112491.
+- **One trial file** only when the question is about a single trial, or to inspect one trial's metadata. Check `size_mb` in `datasets.csv` first, since most files are over 1 MB and some reach 15 MB. Fetch it from `raw.githubusercontent.com` or `https://github.com/AgrDataSci/tricot-data/raw/main/<path>`, never through the GitHub contents API or a GitHub connector, which return empty content for files over 1 MB and make a JSON parser fail with "unexpected end of input".
+
+When a download fails, work down this list and say at each step what failed.
+
+1. Release downloads redirect to `release-assets.githubusercontent.com`, which some sandboxes block even when `raw.githubusercontent.com` works. If the Parquet tables fail, fetch the trial files the question needs from the raw links instead, after listing them with their `size_mb` from `datasets.csv`.
+2. If both fail, tell the user at once and ask them to upload the three Parquet tables (about 7 MB in all), with the three links above. Ask for trial files only when the question needs one or two of them. Never restrict the user to one format.
+3. Never fill the gap with literature, estimates or illustrative numbers while the data are out of reach.
 
 Copies of these files can be cached. Compare the date in the version line at the top of this file with the date of any copy you read. If the layers you see do not match the table above, or anything mentions a data-integration layer, you are reading an old copy. Fetch the live file again before answering.
 
