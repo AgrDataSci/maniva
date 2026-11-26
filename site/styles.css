@@ -730,18 +730,7 @@ main > section {
 .home .btn { background: var(--stalk); color: #fff; border-radius: 0.5rem; font-size: 1.15rem; padding: 0.9rem 1.3rem; }
 .home .btn:hover { background: var(--ink); color: var(--paper); }
 .home .hero-steps { justify-content: center; color: var(--stalk); }
-.home-cta { margin: clamp(2rem, 5vw, 3.5rem) 0 0; }
-.btn-outline {
-  display: inline-block;
-  border: 2px solid var(--stalk);
-  border-radius: 0.6rem;
-  padding: 0.9rem 1.6rem;
-  color: var(--stalk);
-  font: 700 1.25rem/1.2 var(--display);
-  text-decoration: none;
-}
-.btn-outline:hover { background: var(--stalk); color: var(--paper); }
-.home .lede { margin: clamp(2rem, 5vw, 3.5rem) auto 0; text-align: left; }
+.home .lede { margin: clamp(1.5rem, 4vh, 2.5rem) auto 0; text-align: center; max-width: 46em; font-size: 1.05rem; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .home .btn { color: var(--paper); }
 }
@@ -771,6 +760,5 @@ main > section {
 @media (max-width: 52rem) {
   .home .link-field { order: 1; }
   .pillars { order: 2; }
-  .home-cta { order: 3; }
   .home .lede { order: 4; }
 }
