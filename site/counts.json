@@ -1,0 +1,35 @@
+{
+  "note": "Counts shown on the home page. Each number is taken from the layer repository named in sources. Update this file when a layer changes, and the page follows in every language.",
+  "updated": "2026-11-26",
+  "sources": {
+    "knowledge": "AgrDataSci/tricot-knowledge-base, index.json and the topic map in SKILL.md",
+    "protocols": "AgrDataSci/tricot-protocols, folders in protocols/",
+    "data": "AgrDataSci/tricot-data, datasets.csv",
+    "analysis": "AgrDataSci/tricot-analysis-workflows, use-cases/ and decisions/, plus the repositories listed under Analysis on the home page"
+  },
+  "knowledge": {
+    "summaries": 72,
+    "topics": 16,
+    "crops": 13
+  },
+  "protocols": {
+    "variety_testing": 13,
+    "seed_systems": 4,
+    "breeding": 1,
+    "base": 1,
+    "languages": 5
+  },
+  "data": {
+    "trials": 511,
+    "crops": 41,
+    "countries": 20,
+    "since": 2011
+  },
+  "analysis": {
+    "use_cases": 12,
+    "decision_records": 9,
+    "r_packages": 4,
+    "reporting_standards": 1,
+    "templates": 1
+  }
+}

@@ -1,20 +1,24 @@
 # maniva logo
 
-The maniva mark is a five-lobed cassava leaf on its red stalk. The veins of the leaf form a network, with a node at each lobe tip. The name is set in lowercase as one unbroken word.
+The maniva mark is a maniva, a cassava stem cutting, planted in a field. The stem carries three nodes and one young leaf with five lobes. A furrow runs from the cutting to a single burgundy point, which stands for the data the field produces. The name is set in lowercase as one unbroken word.
+
+The colours are green `#34512F` and burgundy `#6B4044`. The reversed files use one light colour, `#f6f3ea`, for the whole logo.
+
+This mark replaced the first one, a cassava leaf with network veins, on 26 November 2026. The reason is recorded in [`metadata/naming.md`](../../metadata/naming.md).
 
 | File | Use |
 |---|---|
 | `maniva-logo-horizontal` | Mark and name side by side, for headers and README files |
 | `maniva-logo` | Mark above the name, for covers and square spaces |
-| `maniva-mark` | The leaf alone, for icons |
+| `maniva-mark` | The mark alone, for icons |
 | `maniva-logo-reversed`, `maniva-logo-horizontal-reversed`, `maniva-mark-reversed` | Light lines for dark backgrounds |
 
 Each comes as SVG, PNG and PDF. The lettering is Inter Display Bold, converted to outlines, so no font is needed to display it.
 
 ## Using it
 
-- Keep clear space around the logo of at least the width of one leaf lobe.
-- Use the reversed files on dark backgrounds. The standard files have black lines that disappear there.
+- Keep clear space around the logo of at least the width of the stem.
+- Use the reversed files on dark backgrounds. The standard files are dark green and disappear there.
 - Do not split or recolour the letters of the name.
 - Write the name in lowercase, always, including at the start of a sentence.
 - Do not add "AI" to the name. The suite is called maniva.
