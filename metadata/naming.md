@@ -64,9 +64,11 @@ The name is always written **maniva**, in lowercase, in prose, in the logo, in l
 
 ## The logo
 
-The mark is a five-lobed cassava leaf on its red stalk. The veins of the leaf are drawn as a network, with a node at each lobe tip, so the leaf also reads as linked data. It is a sibling of the AgrDataSci mark, which is a leaf over binary digits.
+The mark is a maniva, a cassava stem cutting, planted in a field. The stem carries three nodes and one young leaf with five lobes, and a furrow runs from the cutting to a single burgundy point, the data the field produces. It shows what the name means, and it reads from field to data.
 
-Other marks were drawn and set aside with the names they belonged to. They included the leaf growing from a stem cutting, a leaf inside a speech bubble, and a weave of fibre strips with a leaf at its centre. The files are in [`docs/logo`](../docs/logo).
+The first mark, used from 5 to 26 November 2026, was a five-lobed cassava leaf on its red stalk, with veins drawn as a network. It was replaced on 26 November 2026 because a cassava leaf on its own can be mistaken for a hemp leaf, above all at small sizes. The new mark keeps the leaf small and attached to the cutting, in a geometric style drawn with Valentin Guignon.
+
+Other marks were drawn and set aside with the names they belonged to. They included an earlier drawing of the leaf growing from a stem cutting, a leaf inside a speech bubble, and a weave of fibre strips with a leaf at its centre. The files are in [`docs/logo`](../docs/logo).
 
 ## What the name does not change
 
