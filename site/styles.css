@@ -1,7 +1,7 @@
 /* maniva site. Palette taken from the logo: the green of the cutting and the burgundy data point. */
 :root {
-  --paper: #f7faf4;
-  --paper-2: #ecf3e7;
+  --paper: #f8f8f8;
+  --paper-2: #eeefec;
   --ink: #18231a;
   --ink-soft: #4b5a4e;
   --leaf: #34512f;
@@ -11,6 +11,7 @@
   --sprout-wash: #e6ede3;
   --stalk: #6b4044;
   --mark: #34512f;
+  --box: #dcd5d5;
   --line: #cfdcca;
   --mark-line: #111111;
   --mark-node: #ffffff;
@@ -41,6 +42,7 @@
     --leaf-logo: #8fb486;
     --stalk: #c9979c;
     --mark: #eef3ea;
+    --box: #2c2527;
   }
 }
 
@@ -682,4 +684,64 @@ main > section {
 .hero-mark { width: min(100%, 22rem, 56vh); }
 @media (max-width: 52rem) {
   .hero-mark { width: 6.5rem; margin-bottom: -0.5rem; }
+}
+
+/* Home page first screen, after the design team's concept: the logo, the title, the four layers in numbers, the link. */
+.top .wordmark img { height: 3rem; }
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: clamp(1rem, 3vh, 2.5rem) !important;
+}
+.home-brand { margin: 0; width: min(100%, 40rem); }
+.home-brand img { width: 100%; height: auto; }
+.home h1 {
+  color: var(--leaf);
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.4rem);
+  font-weight: 700;
+  max-width: 24em;
+  margin: 1rem 0 0;
+}
+.pillars {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.5rem 2rem;
+  width: 100%;
+  margin: clamp(2rem, 5vw, 3.5rem) 0 0;
+  padding: 0;
+  text-align: left;
+}
+.pillars h2 { color: var(--leaf); font-size: var(--step-2); margin: 0 0 0.5rem; }
+.pillars ul { margin: 0; padding-left: 1.2rem; color: var(--leaf); }
+.pillars li li { margin: 0.2rem 0; }
+.home .link-field { width: min(100%, 44rem); max-width: none; margin-top: clamp(2rem, 5vw, 3.5rem); }
+.home .link-field label { color: var(--stalk); }
+.home .link-row {
+  border: 0;
+  border-radius: 0.6rem;
+  background: var(--box);
+  padding: 0.6rem;
+  box-shadow: none;
+}
+.home .link-row input { font-size: clamp(1rem, 0.8rem + 1vw, 1.4rem); font-weight: 400; color: var(--leaf); letter-spacing: 0.01em; }
+.home .btn { background: var(--stalk); color: #fff; border-radius: 0.5rem; font-size: 1.15rem; padding: 0.9rem 1.3rem; }
+.home .btn:hover { background: var(--ink); color: var(--paper); }
+.home .hero-steps { justify-content: center; color: var(--stalk); }
+.home-cta { margin: clamp(2rem, 5vw, 3.5rem) 0 0; }
+.btn-outline {
+  display: inline-block;
+  border: 2px solid var(--stalk);
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  color: var(--stalk);
+  font: 700 1.25rem/1.2 var(--display);
+  text-decoration: none;
+}
+.btn-outline:hover { background: var(--stalk); color: var(--paper); }
+.home .lede { margin: clamp(2rem, 5vw, 3.5rem) auto 0; text-align: left; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home .btn { color: var(--paper); }
 }

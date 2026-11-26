@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="styles.css?v=14">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -27,69 +27,84 @@
 
 <header class="top">
   <a class="wordmark" href="./" aria-label="maniva home">
-    <img class="wordmark-light" src="logo/maniva-logo-horizontal.svg" alt="maniva" width="150" height="47">
-    <img class="wordmark-dark" src="logo/maniva-logo-horizontal-reversed.svg" alt="" width="150" height="47">
+    <img class="wordmark-light" src="logo/maniva-mark.svg" alt="maniva" width="44" height="47">
+    <img class="wordmark-dark" src="logo/maniva-mark-reversed.svg" alt="" width="44" height="47">
   </a>
   <nav aria-label="Main">
-    <a href="#layers">Layers</a>
-    <a href="use.html">Use it</a>
-    <a href="#work">Collaborate</a>
-    <a href="#why">Why maniva</a>
-    <a href="#cite">Cite</a>
-    <a href="https://github.com/AgrDataSci/maniva">GitHub</a>
+    <a href="use.html">How to use</a>
+    <a href="#layers">Data sources</a>
+    <a href="#why">About</a>
   </nav>
 </header>
 
 <main id="main">
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>An open commons of evidence, protocols, data and analysis for agricultural research</h1>
-    <p class="hero-sub">Share one link. Get the evidence, protocols, data and analysis behind the research.</p>
+<section class="home">
+  <p class="home-brand">
+    <img class="wordmark-light" src="logo/maniva-logo-horizontal.svg" alt="maniva" width="640" height="198">
+    <img class="wordmark-dark" src="logo/maniva-logo-horizontal-reversed.svg" alt="" width="640" height="198">
+  </p>
+  <h1>An open commons of evidence, protocols, data and analysis for agricultural research</h1>
 
-    <div class="link-field">
-      <label for="share-link">Paste this into any AI assistant with web access, then ask your question.</label>
-      <div class="link-row">
-        <input id="share-link" type="text" value="https://github.com/AgrDataSci/maniva" readonly>
-        <button type="button" class="btn" data-copy="#share-link">Copy link</button>
-      </div>
-      <ol class="hero-steps">
-        <li>Copy the link</li>
-        <li>Paste it into your AI assistant</li>
-        <li>Ask your question</li>
-      </ol>
-      <p class="hero-example">For example, ask “Which trials and datasets exist for my crop?”</p>
-      <p class="copy-status" role="status" aria-live="polite"></p>
+  <ul class="pillars">
+    <li>
+      <h2>Knowledge base</h2>
+      <ul>
+          <li><span translate="no" data-count="knowledge.summaries">72</span> <span>publication summaries</span></li>
+          <li><span translate="no" data-count="knowledge.topics">16</span> <span>topics</span></li>
+          <li><span translate="no" data-count="knowledge.crops">13</span> <span>crops</span></li>
+      </ul>
+    </li>
+    <li>
+      <h2>Protocols</h2>
+      <ul>
+          <li><span translate="no" data-count="protocols.variety_testing">13</span> <span>variety testing protocols</span></li>
+          <li><span translate="no" data-count="protocols.seed_systems">4</span> <span>seed system protocols</span></li>
+          <li><span translate="no" data-count="protocols.breeding">1</span> <span>breeding protocol</span></li>
+          <li><span translate="no" data-count="protocols.base">1</span> <span>base protocol</span></li>
+          <li><span>Available in</span> <span translate="no" data-count="protocols.languages">5</span> <span>languages</span></li>
+      </ul>
+    </li>
+    <li>
+      <h2>Data</h2>
+      <ul>
+          <li><span translate="no" data-count="data.trials">511</span> <span>field trials</span></li>
+          <li><span translate="no" data-count="data.crops">41</span> <span>crops</span></li>
+          <li><span translate="no" data-count="data.countries">20</span> <span>countries</span></li>
+          <li><span>On-farm trials since</span> <span translate="no" data-count="data.since">2011</span></li>
+          <li>Rainfall, temperature, elevation and soil for any site</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Analysis</h2>
+      <ul>
+          <li><span translate="no" data-count="analysis.use_cases">12</span> <span>question-based use cases</span></li>
+          <li><span translate="no" data-count="analysis.decision_records">9</span> <span>method decision records</span></li>
+          <li><span translate="no" data-count="analysis.r_packages">4</span> <span>R packages</span></li>
+          <li><span translate="no" data-count="analysis.reporting_standards">1</span> <span>reporting standard</span></li>
+          <li><span translate="no" data-count="analysis.templates">1</span> <span>project template</span></li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="link-field">
+    <label for="share-link">Paste this into any AI assistant with web access, then ask your question.</label>
+    <div class="link-row">
+      <input id="share-link" type="text" value="https://github.com/AgrDataSci/maniva" readonly>
+      <button type="button" class="btn" data-copy="#share-link">Copy link</button>
     </div>
-    <p class="lede">Agricultural research leaves papers, protocols, data and code in separate places, and using them takes someone who already knows where to look. maniva links and documents them, so anyone, and any AI assistant, can use them without that insider.</p>
-    <p class="lede domain-note">tricot is the first domain, with on-farm trial data on more than 30 crops in more than 25 countries since 2011. Weather, elevation and soil data are available for any site, and household data come next.</p>
+    <ol class="hero-steps">
+      <li>Copy the link</li>
+      <li>Paste it into your AI assistant</li>
+      <li>Ask your question</li>
+    </ol>
+    <p class="hero-example">For example, ask “Which trials and datasets exist for my crop?”</p>
+    <p class="copy-status" role="status" aria-live="polite"></p>
   </div>
 
-  <figure class="hero-mark" aria-hidden="true">
-    <svg viewBox="15.4 5.6 168.4 180.2" class="mark">
-      <g class="m-line">
-        <g transform="matrix(-.98481 -.17365 -.17365 .98481 193.2 -16.341)">
-          <g transform="translate(1.8079 -.45198)">
-            <path d="m103 86 29-6" stroke-width="6"/>
-            <g transform="matrix(.41314 0 0 .44434 77.466 44.452)" stroke-linecap="round" stroke-width="21.006">
-              <path d="m132 80 6.3-35.5"/><path d="m132 80 29.7-29.7"/><path d="m132 80 45.3-8"/><path d="m132 80 38.1 17.8"/><path d="m132 80 18 31.2"/>
-            </g>
-          </g>
-          <g transform="rotate(20 -38.373 243.61)">
-            <path transform="translate(-55.78 -32.801)" d="m85.28 172.17v-123.37" stroke-width="26"/>
-            <circle class="m-fill" cx="42" cy="45.858" r="5"/>
-            <circle class="m-fill" cx="17" cy="77.685" r="5"/>
-            <circle class="m-fill" cx="42" cy="108.53" r="5"/>
-          </g>
-        </g>
-        <path class="m-fill" d="m120.18 170.68c19.774 8.4909 54.642 4.9022 43.332-0.82912-13.953-7.0708-26.925-13.561-39.183-12.976-11.598 0.55336-14.004 9.5735-4.1493 13.805z"/>
-        <g transform="rotate(-5 99.953 155.62)">
-          <path d="m29.453 165.62q70-20 118-16" stroke-width="8" stroke-linecap="round"/>
-          <circle class="m-dot" cx="165.45" cy="150.62" r="9"/>
-        </g>
-      </g>
-    </svg>
-  </figure>
+  <p class="home-cta"><a class="btn-outline" href="https://forms.gle/2cK7tTxPFCQmq4AQ7">Become a data contributor</a></p>
+
+  <p class="lede">Agricultural research leaves papers, protocols, data and code in separate places, and using them takes someone who already knows where to look. maniva links and documents them, so anyone, and any AI assistant, can use them without that insider.</p>
 </section>
 
 <section id="layers" class="layers" aria-labelledby="layers-title">
@@ -287,6 +302,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=9" defer></script>
+<script src="main.js?v=10" defer></script>
 </body>
 </html>

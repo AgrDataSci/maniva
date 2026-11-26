@@ -1,4 +1,4 @@
-// maniva site behaviour: copy buttons, the question router, and the live version.
+// maniva site behaviour: copy buttons, the question router, the home page counts, and the live version.
 // Interface messages come from the #i18n block, which the build fills per language.
 
 (function () {
@@ -72,6 +72,20 @@
       note.textContent = t.routeTo + phrase + ".";
     });
   });
+
+  // Home page counts from counts.json, deployed with the site. The numbers in the page are the fallback.
+  if (document.querySelector("[data-count]")) {
+    fetch(root + "counts.json")
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(function (c) {
+        document.querySelectorAll("[data-count]").forEach(function (el) {
+          var path = el.getAttribute("data-count").split(".");
+          var v = c[path[0]] && c[path[0]][path[1]];
+          if (typeof v === "number") el.textContent = String(v);
+        });
+      })
+      .catch(function () {});
+  }
 
   // Live version from version.json on main, with the copy deployed alongside the site as fallback
   var show = function (v) {
