@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this documentation, please cite it as below. Each linked repository has its own citation and DOI."
-title: "maniva. An open commons of evidence, protocols, data and analysis for agricultural research"
+title: "maniva. An open commons for agricultural research"
 abstract: >-
-  maniva is an open commons of evidence, protocols, data and analysis for
-  agricultural research, built so that people and AI assistants can use them
+  maniva is an open commons for agricultural research. It links evidence,
+  protocols, data and analysis so that people and AI assistants can use them
   together. tricot (triadic comparison of technology options) is its first
   domain. Each layer lives in its own repository with its own skill, licence
   and citation. The knowledge base holds verified cards on the published

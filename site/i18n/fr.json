@@ -18,9 +18,6 @@
     }
   },
   "strings": {
-    "maniva. An open commons of evidence, protocols, data and analysis for agricultural research": "maniva. Une ressource collaborative ouverte pour les résultats scientifiques, les protocoles, les données et les analyses en recherche agricole",
-    "maniva is an open commons of evidence, protocols, data and analysis for agricultural research, built so that people and AI assistants can use them together.": "maniva est une ressource collaborative ouverte réunissant résultats scientifiques, protocoles, données et analyses pour la recherche agricole, conçue pour être utilisée conjointement par les personnes et les assistants d’IA.",
-    "An open commons of evidence, protocols, data and analysis for agricultural research.": "Une ressource collaborative ouverte réunissant résultats scientifiques, protocoles, données et analyses pour la recherche agricole.",
     "Skip to content": "Aller au contenu",
     "maniva home": "Accueil de maniva",
     "Main": "Principal",
@@ -155,6 +152,9 @@
     "R packages": "packages R",
     "reporting standard": "norme de rapport",
     "project template": "modèle de projet",
-    "An open commons for agricultural research": "Une ressource collaborative ouverte pour la recherche agricole"
+    "An open commons for agricultural research": "Une ressource collaborative ouverte pour la recherche agricole",
+    "maniva. An open commons for agricultural research": "maniva. Une ressource collaborative ouverte pour la recherche agricole",
+    "maniva is an open commons for agricultural research. It links evidence, protocols, data and analysis so that people and AI assistants can use them together.": "maniva est une ressource collaborative ouverte pour la recherche agricole. Elle relie résultats scientifiques, protocoles, données et analyses pour que les personnes et les assistants d’IA puissent les utiliser ensemble.",
+    "An open commons for agricultural research.": "Une ressource collaborative ouverte pour la recherche agricole."
   }
 }
