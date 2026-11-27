@@ -1,10 +1,10 @@
 # maniva logo
 
-The maniva mark is a maniva, a cassava stem cutting, planted in a field. The stem carries three nodes and one young leaf with five lobes. A furrow runs from the cutting to a single burgundy point, which stands for the data the field produces. The name is set in lowercase as one unbroken word.
+The maniva mark is a seal. Inside a ring stands a maniva, a cassava stem cutting, with three nodes and one young leaf. It stands on a ground line that ends in a single burgundy point, which stands for the data the field produces. The name is set in lowercase as one unbroken word.
 
 The colours are green `#34512F` and burgundy `#6B4044`. The reversed files use one light colour, `#f6f3ea`, for the whole logo.
 
-This mark replaced the first one, a cassava leaf with network veins, on 26 November 2026. The reason is recorded in [`metadata/naming.md`](../../metadata/naming.md).
+The seal replaced the open drawing of the cutting on 27 November 2026, and that drawing had replaced the first mark, a cassava leaf with network veins, on 26 November 2026. The reasons are recorded in [`metadata/naming.md`](../../metadata/naming.md).
 
 | File | Use |
 |---|---|
@@ -17,7 +17,7 @@ Each comes as SVG, PNG and PDF. The lettering is Inter Display Bold, converted t
 
 ## Using it
 
-- Keep clear space around the logo of at least the width of the stem.
+- Keep clear space around the logo of at least a quarter of the diameter of the seal.
 - Use the reversed files on dark backgrounds. The standard files are dark green and disappear there.
 - Do not split or recolour the letters of the name.
 - Write the name in lowercase, always, including at the start of a sentence.
