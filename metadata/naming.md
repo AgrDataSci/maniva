@@ -50,7 +50,7 @@ The suite started under a working title, "AI-ready documentation for tricot", of
 
 A web check on 5 November 2026 found the word in use by a mineral water brand, a small software consultancy and a phone app called "Maniva AI". None works in agricultural research or open science.
 
-For that reason the suite is always called **maniva**, never "Maniva AI" or "maniva AI". The full title carries the rest, as in "maniva. An open commons of evidence, protocols, data and analysis for agricultural research".
+For that reason the suite is always called **maniva**, never "Maniva AI" or "maniva AI". The full title carries the rest, as in "maniva. An open commons for agricultural research".
 
 This was a web check, not a trademark search. Anyone who plans to register the name should run one.
 
@@ -64,9 +64,13 @@ The name is always written **maniva**, in lowercase, in prose, in the logo, in l
 
 ## The logo
 
-The mark is a maniva, a cassava stem cutting, planted in a field. The stem carries three nodes and one young leaf with five lobes, and a furrow runs from the cutting to a single burgundy point, the data the field produces. It shows what the name means, and it reads from field to data.
+The mark is a seal. Inside a ring stands a maniva, a cassava stem cutting, with three nodes and one young leaf. It stands on a ground line that ends in a single burgundy point, the data the field produces. It shows what the name means, and it reads from field to data. The seal follows the plain, plant-based emblems of the agricultural research institutions that maniva works with.
 
-The first mark, used from 5 to 26 November 2026, was a five-lobed cassava leaf on its red stalk, with veins drawn as a network. It was replaced on 26 November 2026 because a cassava leaf on its own can be mistaken for a hemp leaf, above all at small sizes. The new mark keeps the leaf small and attached to the cutting, in a geometric style drawn with Valentin Guignon.
+The mark changed twice in its first weeks.
+
+- From 5 to 26 November 2026 it was a five-lobed cassava leaf on its red stalk, with veins drawn as a network. It was replaced because a cassava leaf on its own can be mistaken for a hemp leaf, above all at small sizes.
+- From 26 to 27 November 2026 it was the cutting drawn in the open, planted beside a curved furrow, in a geometric style drawn with Valentin Guignon. The furrow did not read as soil, and without it the cutting read as a numeral.
+- Since 27 November 2026 the same cutting stands inside the ring, on a straight ground line.
 
 Other marks were drawn and set aside with the names they belonged to. They included an earlier drawing of the leaf growing from a stem cutting, a leaf inside a speech bubble, and a weave of fibre strips with a leaf at its centre. The files are in [`docs/logo`](../docs/logo).
 

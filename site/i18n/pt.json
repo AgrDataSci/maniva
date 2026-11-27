@@ -18,9 +18,6 @@
     }
   },
   "strings": {
-    "maniva. An open commons of evidence, protocols, data and analysis for agricultural research": "maniva. Um bem comum aberto de evidências, protocolos, dados e análises para a pesquisa agrícola",
-    "maniva is an open commons of evidence, protocols, data and analysis for agricultural research, built so that people and AI assistants can use them together.": "maniva é um bem comum aberto de evidências, protocolos, dados e análises para a pesquisa agrícola, feito para que pessoas e assistentes de IA possam usá-los juntos.",
-    "An open commons of evidence, protocols, data and analysis for agricultural research.": "Um bem comum aberto de evidências, protocolos, dados e análises para a pesquisa agrícola.",
     "Skip to content": "Pular para o conteúdo",
     "maniva home": "Página inicial da maniva",
     "Main": "Principal",
@@ -130,7 +127,6 @@
     "maniva works best with assistants that can open several files from GitHub in one conversation, such as Claude with web access. Copilot and Gemini can read the main page but often cannot follow links into the layers, so answers may stay general. Start a new conversation so earlier chats do not mix in.": "O maniva funciona melhor com assistentes capazes de abrir vários arquivos do GitHub na mesma conversa, como o Claude com acesso à web. Copilot e Gemini conseguem ler a página principal, mas muitas vezes não seguem os links para as camadas, e as respostas podem ficar genéricas. Comece uma conversa nova para que conversas anteriores não interfiram.",
     "If your assistant says it cannot open the link, paste this one instead": "Se o seu assistente disser que não consegue abrir o link, cole este no lugar",
     "The maniva logo, a cassava stem cutting planted in a field": "Logo da maniva: uma estaca de mandioca plantada no campo",
-    "An open commons of evidence, protocols, data and analysis for agricultural research": "Um bem comum aberto de evidências, protocolos, dados e análises para a pesquisa agrícola",
     "Copy the link": "Copie o link",
     "Paste it into your AI assistant": "Cole no seu assistente de IA",
     "Ask your question": "Faça sua pergunta",
@@ -155,6 +151,10 @@
     "method decision records": "registros de decisões metodológicas",
     "R packages": "pacotes R",
     "reporting standard": "padrão de relatórios",
-    "project template": "modelo de projeto"
+    "project template": "modelo de projeto",
+    "An open commons for agricultural research": "Um bem comum aberto para a pesquisa agrícola",
+    "maniva. An open commons for agricultural research": "maniva. Um bem comum aberto para a pesquisa agrícola",
+    "maniva is an open commons for agricultural research. It links evidence, protocols, data and analysis so that people and AI assistants can use them together.": "maniva é um bem comum aberto para a pesquisa agrícola. Reúne evidências, protocolos, dados e análises para que pessoas e assistentes de IA possam usá-los juntos.",
+    "An open commons for agricultural research.": "Um bem comum aberto para a pesquisa agrícola."
   }
 }

@@ -10,7 +10,7 @@
 
 # maniva
 
-*An open commons of evidence, protocols, data and analysis for agricultural research*
+*An open commons for agricultural research*
 
 Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/maniva/).
 
@@ -122,7 +122,7 @@ Rooted in biodiversity. Growing through collaboration.
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, Rouard M, Guignon V, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://doi.org/10.5281/zenodo.24011051
+> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, Rouard M, Guignon V, van Etten J (2026). maniva. An open commons for agricultural research. Version 1.0.0. https://doi.org/10.5281/zenodo.24011051
 
 This DOI always resolves to the latest version. To cite one version exactly, use its own DOI on Zenodo. Version 1.0.0 is https://doi.org/10.5281/zenodo.24011052.
 

@@ -1,4 +1,4 @@
-# maniva. An open commons of evidence, protocols, data and analysis for agricultural research
+# maniva. An open commons for agricultural research
 
 > One entry point to the AgrDataSci resources on tricot and product testing with users. Each layer (published evidence, protocols, trial and environment data, analytical approaches) lives in its own repository, with its own skill, rules and citation.
 

@@ -18,9 +18,6 @@
     }
   },
   "strings": {
-    "maniva. An open commons of evidence, protocols, data and analysis for agricultural research": "maniva. Une ressource collaborative ouverte pour les résultats scientifiques, les protocoles, les données et les analyses en recherche agricole",
-    "maniva is an open commons of evidence, protocols, data and analysis for agricultural research, built so that people and AI assistants can use them together.": "maniva est une ressource collaborative ouverte réunissant résultats scientifiques, protocoles, données et analyses pour la recherche agricole, conçue pour être utilisée conjointement par les personnes et les assistants d’IA.",
-    "An open commons of evidence, protocols, data and analysis for agricultural research.": "Une ressource collaborative ouverte réunissant résultats scientifiques, protocoles, données et analyses pour la recherche agricole.",
     "Skip to content": "Aller au contenu",
     "maniva home": "Accueil de maniva",
     "Main": "Principal",
@@ -130,7 +127,6 @@
     "maniva works best with assistants that can open several files from GitHub in one conversation, such as Claude with web access. Copilot and Gemini can read the main page but often cannot follow links into the layers, so answers may stay general. Start a new conversation so earlier chats do not mix in.": "maniva fonctionne mieux avec les assistants capables d'ouvrir plusieurs fichiers GitHub dans une même conversation, comme Claude avec l'accès au Web. Copilot et Gemini peuvent lire la page principale, mais suivent rarement les liens vers les composantes, et leurs réponses restent alors générales. Ouvrez une nouvelle conversation pour que les échanges précédents n'interfèrent pas.",
     "If your assistant says it cannot open the link, paste this one instead": "Si votre assistant indique qu'il ne peut pas ouvrir le lien, collez plutôt celui-ci",
     "The maniva logo, a cassava stem cutting planted in a field": "Logo de maniva représentant une bouture de manioc plantée dans un champ",
-    "An open commons of evidence, protocols, data and analysis for agricultural research": "Une ressource collaborative ouverte réunissant résultats scientifiques, protocoles, données et analyses pour la recherche agricole",
     "Copy the link": "Copiez le lien",
     "Paste it into your AI assistant": "Collez-le dans votre assistant d’IA",
     "Ask your question": "Posez votre question",
@@ -155,6 +151,10 @@
     "method decision records": "fiches de décision méthodologique",
     "R packages": "packages R",
     "reporting standard": "norme de rapport",
-    "project template": "modèle de projet"
+    "project template": "modèle de projet",
+    "An open commons for agricultural research": "Une ressource collaborative ouverte pour la recherche agricole",
+    "maniva. An open commons for agricultural research": "maniva. Une ressource collaborative ouverte pour la recherche agricole",
+    "maniva is an open commons for agricultural research. It links evidence, protocols, data and analysis so that people and AI assistants can use them together.": "maniva est une ressource collaborative ouverte pour la recherche agricole. Elle relie résultats scientifiques, protocoles, données et analyses pour que les personnes et les assistants d’IA puissent les utiliser ensemble.",
+    "An open commons for agricultural research.": "Une ressource collaborative ouverte pour la recherche agricole."
   }
 }
