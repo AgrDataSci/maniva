@@ -130,7 +130,6 @@
     "maniva works best with assistants that can open several files from GitHub in one conversation, such as Claude with web access. Copilot and Gemini can read the main page but often cannot follow links into the layers, so answers may stay general. Start a new conversation so earlier chats do not mix in.": "maniva funciona mejor con asistentes que pueden abrir varios archivos de GitHub en una misma conversación, como Claude con acceso a la web. Copilot y Gemini pueden leer la página principal, pero a menudo no siguen los enlaces hacia las capas, así que sus respuestas pueden quedarse en lo general. Empiece una conversación nueva para que las anteriores no interfieran.",
     "If your assistant says it cannot open the link, paste this one instead": "Si su asistente dice que no puede abrir el enlace, pegue este en su lugar",
     "The maniva logo, a cassava stem cutting planted in a field": "Logo de maniva, una estaca de yuca plantada en el campo",
-    "An open commons of evidence, protocols, data and analysis for agricultural research": "Un recurso abierto y colaborativo de evidencia científica, protocolos, datos y análisis para la investigación agrícola",
     "Copy the link": "Copie el enlace",
     "Paste it into your AI assistant": "Péguelo en su asistente de IA",
     "Ask your question": "Haga su pregunta",
@@ -155,6 +154,7 @@
     "method decision records": "registros de decisiones metodológicas",
     "R packages": "paquetes de R",
     "reporting standard": "estándar de informes",
-    "project template": "plantilla de proyecto"
+    "project template": "plantilla de proyecto",
+    "An open commons for agricultural research": "Un recurso abierto y colaborativo para la investigación agrícola"
   }
 }
